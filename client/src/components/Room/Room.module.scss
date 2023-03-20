@@ -1,0 +1,48 @@
+.Room {
+    width: 80%;
+    border-radius: 10px;
+    min-height: 580px;
+    border: 1px solid black;
+    margin: 20px 0px 0px 0px;
+
+    .Topic {
+        height: 5%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        h1 {
+            font-weight: normal;
+            font-size: 20px;
+        }
+    }
+
+    .Messages {
+        height: 83%;
+        padding-top: 1%;
+        overflow-y: scroll;
+    }
+
+    .Footer {
+        display: flex;
+        justify-content: space-between;
+        height: 10%;
+
+        .LeaveButton {
+            width: 10%;
+            border-bottom-left-radius: 10px;
+        }
+
+        .SendButton {
+            width: 10%;
+            border-bottom-right-radius: 10px;
+        }
+
+        input {
+            width: 82%;
+        }
+    }
+}
