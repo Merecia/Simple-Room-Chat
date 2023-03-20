@@ -29,6 +29,10 @@ const Room = () => {
         const roomName = localStorage.getItem('roomName');
         const userName = localStorage.getItem('userName');
 
+        if (!roomName || !userName) {
+            navigate('/');
+        }
+
         const socket = io.connect(process.env.REACT_APP_SERVER_URL, {
             query: { roomName, userName }
         });
