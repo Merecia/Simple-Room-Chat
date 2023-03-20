@@ -1,20 +1,20 @@
 .Home {
-    margin-top: 40px;
-    width: 40%;
+    margin-top: 30vh;
+    width: 35%;
     border: 1px solid black;
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    padding: 40px 0px;
+    padding: 50px 0px;
 
     .Content {
-        width: 60%;
+        width: 80%;
     }
 
     input {
         width: 100%;
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     button {

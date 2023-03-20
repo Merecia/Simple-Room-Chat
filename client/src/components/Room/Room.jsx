@@ -4,6 +4,7 @@ import style from './Room.module.scss';
 import io from "socket.io-client";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import Spinner from '../Spinner/Spinner';
 
 const Room = () => {
     const [messages, setMessages] = useState([]);
@@ -137,7 +138,7 @@ const Room = () => {
 
     return (
         <>
-            {!loading ? renderRoom() : null}
+            {loading ? <Spinner top = '40vh'/> : renderRoom()}
         </>
     );
 }

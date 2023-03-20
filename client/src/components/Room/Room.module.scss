@@ -2,7 +2,9 @@
     width: 80%;
     border-radius: 10px;
     min-height: 580px;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    outline: 1px solid black;
     margin: 20px 0px 0px 0px;
 
     .Topic {
@@ -28,21 +30,27 @@
 
     .Footer {
         display: flex;
-        justify-content: space-between;
         height: 10%;
 
         .LeaveButton {
-            width: 10%;
+            outline: 1px solid black;
+            border: 0;
+            width: 15%;
             border-bottom-left-radius: 10px;
         }
 
         .SendButton {
-            width: 10%;
+            outline: 1px solid black;
+            border: 0;
+            width: 15%;
             border-bottom-right-radius: 10px;
         }
 
         input {
-            width: 82%;
+            padding-left: 10px;
+            width: 70%;
+            outline: 1px solid black;
+            border: 0;
         }
     }
 }
